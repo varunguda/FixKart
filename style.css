@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500;600;800&display=swap');
+
+
+:root {
+    --flipkart: #287FF0;
+    --theme: #EEEEEE;
+    --kart-yellow:#FFE11B;
+    --foot-color:#152840;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--theme);
+    font-family: 'Mukta', sans-serif;
+}
+
+.brand-navbar {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: 800;
+    font-size:larger;
+}
+
+.brand-dis {
+    font-size:x-small;
+    font-weight: 200;
+}
+
+.brand-dis a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--flipkart);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+}
+.nav-all{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0px 190px;
+}
+
+.list-item {
+    list-style: none;
+    display: inline;
+}
+
+.navbar .link {
+    text-decoration: none;
+    color: white;
+}
+
+.search-navbar {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    height: 40px;
+    border-radius: 3px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-button {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+}
+
+.search-navbar .search-button img {
+    height: 20px;
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+
+.search-bar {
+    background: transparent;
+    border: none;
+    height: 40px;
+    flex:1;
+    /* max-width: 400px;
+    width: 100%; */
+    padding-left: 15px;
+    outline:none;
+}
+.search{
+    width:450px;
+    margin-left: 15px;
+}
+.nav-element{
+    margin:0px 30px;
+    line-height: 18px;
+}
+.link-pri{
+    color: var(--flipkart);
+    text-decoration: none;
+    background-color: white;
+    padding: 2px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2px;
+}
+.link-pri:hover{
+    background-color: var(--flipkart);
+    border: 2px solid white;
+    color:white;
+    padding: 0px 38px;
+}
+.login{
+    margin: 0px 30px 0px 50px;
+}
+.care{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+    margin-left: 30px;
+}
+.nav-element:hover{
+    text-decoration: underline;
+    color: white;
+}
+.anim{
+    position: absolute;
+    background-color: var(--flipkart);
+    height:15px;
+    width: 15px;
+    border-radius: 15px;
+}
+.care div a{
+    position:relative;
+    z-index: 10;
+}
+.care:hover .anim{
+    background-color: var(--kart-yellow);
+}
+
+.section1{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headline{
+    margin-left:121px;
+    margin-right: 121px;
+    top:60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+}
+.headline img{
+    height: 65px;
+    width: 65px;
+}
+.headitem{
+    margin: auto;
+    text-align: center;
+    line-height: 20px;
+}
+.head-link{
+    text-decoration: none;
+    color: black;
+}
+.headitem:hover .head-link{
+    color: var(--flipkart)
+}
+.headitem:hover img{
+    transform: scale(1.05);
+}
+
+
+.slide{
+    width: 100%;
+}
+
+.bank{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.bank-offer{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--theme);
+}
+
+.vl{
+    border-right: 1px solid var(--theme);
+    height:10vh;
+    margin-right: 20px;
+}
+.terms{
+    transform: rotate(270deg);
+}
+.terms .link{
+    text-decoration: none;
+}
+.terms:hover .link{
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: var(--foot-color);
+    color:white;
+}
