@@ -224,6 +224,10 @@ body {
 
 #slide {
     width: 100%;
+    
+}
+#slide-container{
+    width:99%;
     min-width:1263px;
     margin-left: auto;
     margin-right: auto;
