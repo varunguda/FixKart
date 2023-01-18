@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;600;800&display=swap');
 
 
 :root {
     --flipkart: #287FF0;
     --theme: #EEEEEE;
-    --kart-yellow:#FFE11B;
-    --foot-color:#152840;
+    --kart-yellow: #FFE11B;
+    --foot-color: #152840;
+    --text: #212121;
+    --text-green: #388e3c;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -23,11 +25,11 @@ body {
     color: white;
     font-style: italic;
     font-weight: 800;
-    font-size:larger;
+    font-size: larger;
 }
 
 .brand-dis {
-    font-size:x-small;
+    font-size: x-small;
     font-weight: 200;
 }
 
@@ -45,9 +47,11 @@ body {
     height: 60px;
     position: fixed;
     overflow: hidden;
-    top:0;
+    top: 0;
+    z-index: 50;
 }
-.nav-all{
+
+.nav-all {
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -93,21 +97,24 @@ body {
     background: transparent;
     border: none;
     height: 40px;
-    flex:1;
+    flex: 1;
     /* max-width: 400px;
     width: 100%; */
     padding-left: 15px;
-    outline:none;
+    outline: none;
 }
-.search{
-    width:450px;
+
+.search {
+    width: 450px;
     margin-left: 15px;
 }
-.nav-element{
-    margin:0px 30px;
+
+.nav-element {
+    margin: 0px 30px;
     line-height: 18px;
 }
-.link-pri{
+
+.link-pri {
     color: var(--flipkart);
     text-decoration: none;
     background-color: white;
@@ -115,87 +122,100 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 2px;
 }
-.link-pri:hover{
+
+.link-pri:hover {
     background-color: var(--flipkart);
     border: 2px solid white;
-    color:white;
+    color: white;
     padding: 0px 38px;
 }
-.login{
+
+.login {
     margin: 0px 30px 0px 50px;
 }
-.care{
+
+.care {
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 18px;
     margin-left: 30px;
 }
-.nav-element:hover{
+
+.nav-element:hover {
     text-decoration: underline;
     color: white;
 }
-.anim{
+
+.anim {
     position: absolute;
     background-color: var(--flipkart);
-    height:15px;
+    height: 15px;
     width: 15px;
     border-radius: 15px;
 }
-.care div a{
-    position:relative;
+
+.care div a {
+    position: relative;
     z-index: 10;
 }
-.care:hover .anim{
+
+.care:hover .anim {
     background-color: var(--kart-yellow);
 }
 
-.section1{
+.section1 {
     margin-top: 60px;
     margin-bottom: 10px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    max-width:100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.headline{
-    margin-left:121px;
+
+.headline {
+    margin-left: 121px;
     margin-right: 121px;
-    top:60px;
+    top: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 120px;
     width: 100%;
 }
-.headline img{
+
+.headline img {
     height: 65px;
     width: 65px;
 }
-.headitem{
+
+.headitem {
     margin: auto;
     text-align: center;
     line-height: 20px;
 }
-.head-link{
+
+.head-link {
     text-decoration: none;
     color: black;
 }
-.headitem:hover .head-link{
+
+.headitem:hover .head-link {
     color: var(--flipkart)
 }
-.headitem:hover img{
+
+.headitem:hover img {
     transform: scale(1.05);
 }
 
 
-.slide{
+.slide {
     width: 100%;
 }
 
-.bank{
+.bank {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
@@ -203,7 +223,8 @@ body {
     align-items: center;
     height: 20vh;
 }
-.bank-offer{
+
+.bank-offer {
     height: 15vh;
     display: flex;
     justify-content: center;
@@ -211,36 +232,123 @@ body {
     border: 1px solid var(--theme);
 }
 
-.vl{
+.vl {
     border-right: 1px solid var(--theme);
-    height:10vh;
+    height: 10vh;
     margin-right: 20px;
 }
-.terms{
+
+.terms {
     transform: rotate(270deg);
 }
-.terms .link{
+
+.terms .link {
     text-decoration: none;
 }
-.terms:hover .link{
+
+.terms:hover .link {
     text-decoration: underline;
     color: black;
 }
 
+.product-section {
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    height: 45vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-image {
+    height: 200px;
+    width: 200px;
+}
+
+#product-imageTV {
+    height: 200px;
+    width: 250px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.deal-name {
+    line-height: 45px;
+    margin-left: 70px;
+    margin-right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 350;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 0px 70px;
+}
+
+.view-all {
+    text-decoration: none;
+    color: white;
+    padding: 7px 20px;
+    background-color: var(--flipkart);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.view-all:hover {
+    background-color: white;
+    border: 2px solid var(--flipkart);
+    padding: 5px 18px;
+    color: var(--flipkart);
+}
+
+.description {
+    font-weight: 200;
+    font-size: small;
+    color: var(--text);
+}
+
+.product {
+    text-align: center;
+}
+
+.product-price {
+    color: var(--text-green);
+}
+.pi:hover{
+    transform: scale(1.05);
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-.footer{
+.footer {
+    margin-top: 10px;
+    height: 40vh;
     background-color: var(--foot-color);
-    color:white;
+    color: white;
+    font-size:smaller;
+    font-weight: 200;
+    display: flex;
+}
+.foot1{
+    display: flex;
+    justify-content: space-between;
+}
+.foot2{
+    display: flex;
 }
