@@ -20,6 +20,12 @@ body {
     font-family: 'Mukta', sans-serif;
 }
 
+/* #wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width:1536px;
+} */
+
 .brand-navbar {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -39,6 +45,8 @@ body {
 }
 
 .navbar {
+    margin: auto;
+    min-width:1164px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,12 +59,12 @@ body {
     z-index: 50;
 }
 
-.nav-all {
+/* .nav-all {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     margin: 0px 190px;
-}
+} */
 
 .list-item {
     list-style: none;
@@ -165,11 +173,14 @@ body {
 }
 
 .section1 {
+    min-width: 875px;
     margin-top: 60px;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,8 +222,11 @@ body {
 }
 
 
-.slide {
+#slide {
     width: 100%;
+    min-width:1263px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bank {
@@ -222,6 +236,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 20vh;
+    min-width:670px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .bank-offer {
@@ -259,6 +276,16 @@ body {
     height: 45vh;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 1235px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-container{
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    margin: auto;
 }
 
 .product-image {
@@ -277,6 +304,7 @@ body {
     width: 100%;
     flex: 1;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .deal-name {
@@ -336,19 +364,52 @@ body {
 
 
 
-.footer {
+footer {
     margin-top: 10px;
     height: 40vh;
     background-color: var(--foot-color);
     color: white;
     font-size:smaller;
     font-weight: 200;
+    min-width:1026px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer{
+    height: 100%;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .foot1{
+    width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .foot2{
+    height: 241px;
+    width: 30%;
     display: flex;
+    justify-content: space-around;
+}
+.foot-heading{
+    font-weight: bold;
+    color: #575656;
+    line-height:40px;
+}
+
+.footer li{
+    list-style: none;
+}
+.footer li a{
+    text-decoration: none;
+    color: white;
+}
+.footer li a:hover{
+    text-decoration: underline;
+}
+.footer .line{
+    height: 25vh;
+    border-left: 1px solid #575656; 
 }
