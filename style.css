@@ -20,11 +20,11 @@ body {
     font-family: 'Mukta', sans-serif;
 }
 
-/* #wrapper{
+#wrapper{
+    min-width: 1282px;
     margin-left: auto;
     margin-right: auto;
-    width:1536px;
-} */
+}
 
 .brand-navbar {
     font-family: 'Open Sans', sans-serif;
@@ -173,17 +173,29 @@ body {
 }
 
 .section1 {
-    min-width: 875px;
+    position: absolute;
     margin-top: 60px;
     margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 100%;
+    width: 1536px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head-section{
+    height: 120px;
+    margin-top: 60px;
+    position: absolute;
+    min-width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 .headline {
@@ -191,9 +203,8 @@ body {
     margin-right: 121px;
     top: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 120px;
     width: 100%;
 }
 
@@ -223,8 +234,8 @@ body {
 
 
 #slide {
-    width: 100%;
-    
+    margin-top: 190px;
+    width: 100%; 
 }
 #slide-container{
     width:99%;
@@ -272,24 +283,41 @@ body {
     color: black;
 }
 
-.product-section {
+.section {
     background-color: white;
     margin-top: 10px;
     display: flex;
     align-items: center;
-    height: 45vh;
-    width: 100%;
+    height: 400px;
+    width: 1536px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    min-width: 1235px;
+    position: absolute;
+}
+.product-section{
+    max-width:100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .product-container{
+    height: 400px;
+    position: relative;
     display: flex;
     align-items: center;
-    min-width: 100%;
     margin: auto;
+    margin-bottom: 10px;
+    z-index: 3;
+    min-width: 1235px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.element{
+    height: 100%;
+    margin:auto;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .product-image {
@@ -303,6 +331,7 @@ body {
 }
 
 .products {
+    height: 100%;
     display: flex;
     align-items: center;
     width: 100%;
@@ -312,13 +341,7 @@ body {
 }
 
 .deal-name {
-    line-height: 45px;
-    margin-left: 70px;
-    margin-right: 20px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     font-weight: 350;
     font-size: xx-large;
     text-align: center;
@@ -327,11 +350,10 @@ body {
 .view {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 30px 20px 0px 70px;
 }
 
 .view-all {
+    display: table-cell;
     text-decoration: none;
     color: white;
     padding: 7px 20px;
@@ -355,6 +377,7 @@ body {
 
 .product {
     text-align: center;
+    margin: auto;
 }
 
 .product-price {
@@ -369,8 +392,8 @@ body {
 
 
 footer {
-    margin-top: 10px;
-    height: 40vh;
+    margin-top: 20px;
+    height: 400px;
     background-color: var(--foot-color);
     color: white;
     font-size:smaller;
