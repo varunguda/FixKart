@@ -1,2 +1,2 @@
-# anEcommercewebsite-clone
+# anEcommercewebsiteTemplate
  
